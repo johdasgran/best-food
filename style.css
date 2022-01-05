@@ -63,7 +63,7 @@ section {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
   justify-content: center;
   grid-auto-rows: 1fr;
   gap: 30px;
@@ -90,7 +90,7 @@ section {
 
 .menu {
     display: grid;
-    grid-template-columns: repeat(5, minmax(150px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
     place-items: center;
     justify-content: center;
     gap: 20px;
