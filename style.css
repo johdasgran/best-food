@@ -92,6 +92,7 @@ section {
     display: grid;
     grid-template-columns: repeat(5, minmax(150px, 250px));
     place-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -106,4 +107,45 @@ section {
     height: 100%;
     object-fit: cover;
     
+}
+
+@media (max-width: 1024px) {
+
+  section {
+    margin: 0px;
+  }
+
+}
+
+@media (max-width: 920px) {
+
+  .hero {
+    grid-template-columns: 100%;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, minmax(150px, 350px));
+    gap: 20px;
+  }
+
+  .menu {
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+}
+  
+}
+
+@media (max-width: 420px) {
+
+  main {
+    padding: 12px;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+  }
+
+  .menu {
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+}
+  
 }
