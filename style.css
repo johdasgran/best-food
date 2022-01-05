@@ -1,21 +1,109 @@
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+section {
+  margin: 40px 0px;
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px;
-    place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  place-items: center;
+}
+
+.info {
+    padding: 50px;
+}
+
+.info h1 {
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+
+.info p {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.info button {
+    font-size: 2rem;
+    padding: 12px;
+    background-color: #b73219;
+    border: none;
+    border-radius: 25px;
+    color: aliceblue;
+    font-weight: 700;
 }
 
 .hero-image {
-  width: auto;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.services-container h2 {
+    font-size: 3rem;
+    padding: 40px;
+    text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 250px));
+  justify-content: center;
+  grid-auto-rows: 1fr;
+  gap: 30px;
+}
+
+.services img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.services img:nth-child(1) {
+  width: 100%;
+  object-fit: cover;
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.menu-container h2 {
+    font-size: 3rem;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 250px));
+    place-items: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #b73219;
+    padding: 20px;
+    border-radius: 40px 0 0 0;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
